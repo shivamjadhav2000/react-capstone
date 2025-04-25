@@ -8,6 +8,10 @@ function App() {
       <NavBar />
       <Featured />
       <Home/>
+      <footer className='footer'>
+        <p>All rights reserved &copy; 2025</p>
+        <p>Little Lemon</p>
+        </footer>
     </>
   );
 }
