@@ -1,5 +1,6 @@
 import React from 'react'
 import Dish from '../components/Dish'
+import Featured from '../components/Featured'
 function Home() {
   const dishes = [
     {
@@ -26,6 +27,8 @@ function Home() {
     <Dish key={index} {...dish} />
   ))
   return (
+    <div>
+      <Featured/>
     <section className='Home'>
       <header>
         <h1>This Weeks Special !</h1>
@@ -37,6 +40,8 @@ function Home() {
       </section>
       
     </section>
+    </div>
+
   )
 }
 
