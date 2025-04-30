@@ -1,6 +1,6 @@
 import React from 'react'
 
-function BookingPage () {
+function BookingPage() {
   return (
     <div className='BookingPage'>
         
@@ -19,7 +19,7 @@ function BookingPage () {
             <label htmlFor="guests">Number of Guests:</label>
             <input type="number" id="guests" name="guests" min="1" required />
             <br />
-            <button type="submit">Book Now</button>
+            <button type="submit" >Book Now</button>
         </form>
         <p>We look forward to serving you!</p>
         <p>For any inquiries, please contact us at  
