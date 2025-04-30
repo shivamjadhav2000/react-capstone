@@ -11,7 +11,7 @@ function Dish(dish) {
         <main>
 
         <p>{dish.description}</p>
-        <a type='button'>Add to Cart</a>
+        <a >Add to Cart</a>
         </main>
     </article>
   )

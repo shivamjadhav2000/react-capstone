@@ -1,12 +1,12 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { useFormik } from 'formik';
 import { fetchAPI, submitAPI } from '../api/api'; // Make sure api.js exports these
+import { useNavigate } from 'react-router-dom';
 
 function BookingPage() {
   const [availableTimes, setAvailableTimes] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState(false);
-
+  const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
       name: '',
@@ -17,11 +17,10 @@ function BookingPage() {
     onSubmit: async (values) => {
       const res = await submitAPI(values); // Changed to submitAPI based on logical use
       if (res) {
-        setSubmitSuccess(true);
         setIsLoading(false);
         console.log('Booking successful:', values);
+        navigate('/confirmation', { state: { bookingDetails: values } }); // Redirect to confirmation page
       } else {
-        setSubmitSuccess(false);
         setIsLoading(false);
         console.error('Booking failed:', values);
       }
@@ -98,13 +97,10 @@ function BookingPage() {
 
         <button type="submit">Book Now</button>
       </form>
-
       {
         isLoading && <p className='info'>Loading available times...</p>
       }
-      {
-        submitSuccess && <p className='success'>Booking successful!</p>
-      }
+
     </div>
   );
 }

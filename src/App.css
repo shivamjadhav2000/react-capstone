@@ -48,7 +48,9 @@ nav ul{
   display: flex;
   height: 59px;
   width:100%;
-  margin:0rem 16rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 1200px;
   align-items: center;
   justify-content: space-between;
   padding-top: 2rem;
@@ -114,7 +116,9 @@ li a{
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  margin:0rem 16rem;
+  margin: 0 auto;
+padding: 0 2rem;
+max-width: 1200px;
   margin-top: 8rem;
 }
 .Home Header {
@@ -165,6 +169,7 @@ li a{
   width: minmax(100%, 20rem);
   height: 16rem;
 }
+
 .dish header{
   display: flex;
   justify-content: space-between;
@@ -195,7 +200,9 @@ li a{
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  margin:0rem 16rem;
+  margin: 0 auto;
+padding: 0 2rem;
+max-width: 1200px;
   margin-top: 2rem;
 }
 form{
@@ -230,6 +237,28 @@ button[type="submit"]{
 button[type="submit"]:hover{
   background-color: #EE9972;
 }
+
+.confirmation-page{
+  width: 100%;
+  height: min(100vh, 80vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.booking-details{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: min(100%, 30rem);
+  padding: 1rem 0rem;
+  border: 1px solid #000000;
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  background-color: #EDEFEE;
+}
+
 footer{
   display: flex;
   width: 100%;
@@ -237,7 +266,7 @@ footer{
   align-items: center;
   background-color: #495E57;
   color: white;
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 2rem 0rem;
 }
 .success{
@@ -256,7 +285,9 @@ footer{
   align-items: center;
   background: red;
   gap: 2rem;
-  margin:0rem 16rem;
+  margin: 0 auto;
+padding: 0 2rem;
+max-width: 1200px;
   margin-top: 8rem;
 }
 .info{
@@ -265,6 +296,87 @@ footer{
   align-items: center;
   background: #F4CE14;
   gap: 2rem;
-  margin:0rem 16rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 1200px;
   margin-top: 8rem;
+}
+
+a[type="button"]{ 
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-family: 'Karla', sans-serif;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem;
+  font-weight: medium;
+  background-color: #F4CE14;
+  padding: 1rem;
+}
+
+@media (max-width: 1024px) {
+  nav ul {
+    margin: 0rem 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .featured {
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .featured aside a {
+    width: 100%;
+  }
+
+  .featured img {
+    width: 100%;
+    max-width: 20rem;
+    bottom: 0;
+  }
+
+  .Home {
+    margin: 0rem 2rem;
+  }
+
+  .Home Header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+    padding-top: 1rem;
+  }
+
+  .featured {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .Home {
+    margin: 0rem 1rem;
+  }
+
+  .BookingPage {
+    margin: 0rem 1rem;
+  }
+
+  .dish img {
+    height: 12rem;
+  }
+
+  footer {
+    padding: 1rem 0;
+    flex-direction: column;
+  }
 }
