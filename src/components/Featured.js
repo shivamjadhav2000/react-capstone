@@ -9,7 +9,7 @@ function Featured() {
             <summary>Check out our latest featured items lorem ipsum hgsa jsdgasd jsagdhjsad sah dkjasgdjasdabdaksdhg  gdhjsad agdjasd ajhgdqs nhqwgrq fljafsfhg
 
             </summary>
-            <a role="button" href="/featured">Reserve A Table</a>
+            <a role="button" href="/booking">Reserve A Table</a>
         </aside>
         <main>
             <img src="pic1.png" alt="Featured" />

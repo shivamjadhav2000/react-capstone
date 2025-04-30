@@ -27,6 +27,16 @@ p{
   font-size: 18px;
   font-weight: medium;
 }
+
+select{
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #EDEFEE;
+  font-size: 18px;
+  font-family: 'Karla', sans-serif;
+}
+
 nav{
   display: flex;
   justify-content: center;
@@ -58,13 +68,12 @@ li a{
 
 
 .featured{
-  
-  padding: 0 16rem;
+  padding: 0rem 16rem;
   background-color: #495E57;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
   color:white;
 }
 .featured h1{
@@ -88,6 +97,9 @@ li a{
   border-radius: 0.5rem;
   font-weight: medium;
   background-color: #F4CE14;
+}
+.featured aside a:hover{
+  background-color: #EE9972;
 }
 .featured img{
   width: 22rem;
@@ -127,6 +139,10 @@ li a{
   border: none;
   cursor: pointer;
 }
+.Home Header button:hover{
+  background-color: #EE9972;
+}
+
 
 .dishes{
   display: grid;
@@ -180,7 +196,7 @@ li a{
   align-items: center;
   gap: 2rem;
   margin:0rem 16rem;
-  margin-top: 8rem;
+  margin-top: 2rem;
 }
 form{
   display: flex;
@@ -223,4 +239,32 @@ footer{
   color: white;
   margin-top: 2rem;
   padding: 2rem 0rem;
+}
+.success{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: green;
+  gap: 2rem;
+  width:min(30rem,100%);
+  padding: 1rem 0rem;
+  border-radius: 1rem;
+} 
+.warning{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: red;
+  gap: 2rem;
+  margin:0rem 16rem;
+  margin-top: 8rem;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #F4CE14;
+  gap: 2rem;
+  margin:0rem 16rem;
+  margin-top: 8rem;
 }
