@@ -323,6 +323,71 @@ a[type="button"]{
   padding: 1rem;
 }
 
+.contact {
+  height: 82vh;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact-header h1 {
+  font-family: 'Markazi Text';
+  font-size: 54px;
+  color: #495E57;
+  margin-bottom: 1rem;
+}
+
+.contact-header p {
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-card img {
+  width: 40px;
+  height: 40px;
+}
+
+.contact-card h2 {
+  font-family: 'Markazi Text';
+  font-size: 24px;
+  color: #495E57;
+}
+
+.contact-card p,
+.contact-card a {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  color: #F4CE14;
+}
+
+
+
 @media (max-width: 1024px) {
   nav ul {
     margin: 0rem 4rem;
