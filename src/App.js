@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <Router>
+      <Router basename="/react-capstone">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/booking" element={<BookingPage />} />
