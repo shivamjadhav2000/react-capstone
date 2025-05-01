@@ -8,3 +8,4 @@ test('renders Little Lemon somewhere on the page', () => {
   const matches = screen.getAllByText(/Little Lemon/i);
   expect(matches.length).toBeGreaterThan(0);
 });
+
