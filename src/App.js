@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import BookingPage from './pages/BookingPage';
 import ConfirmationPage from './pages/ConfirmationPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import Contact from './pages/Contact';
 function App() {
   return (
     <Router basename="/react-capstone">
@@ -15,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/booking" element={<BookingPage />} />
           <Route path="/confirmation" element={<ConfirmationPage />} />
+          <Route path='/contact' element={<Contact/>} />
         </Routes>
         <footer>
           <p>All rights reserved &copy; 2025</p>
