@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function ConfirmationPage() {
     const location = useLocation();
@@ -34,7 +35,8 @@ function ConfirmationPage() {
             )}
             <p>Your booking has been confirmed!</p>
             <p>Thank you for choosing us. We look forward to serving you.</p>
-            <a href="/" type='button'>Back to Home</a>
+            
+            <Link to="/" type='button'>Back to Home</Link>
         </div>
     );
 }
