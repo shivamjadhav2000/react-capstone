@@ -470,7 +470,7 @@ a[type="button"]{
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 540px) {
   nav{
     margin: 0rem 4rem;
     flex-wrap: wrap;
