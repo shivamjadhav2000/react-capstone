@@ -6,9 +6,7 @@ function Featured() {
         <aside>
             <h1>Little Lemon</h1>
             <h2>Denton</h2>
-            <summary>Check out our latest featured items lorem ipsum hgsa jsdgasd jsagdhjsad sah dkjasgdjasdabdaksdhg  gdhjsad agdjasd ajhgdqs nhqwgrq fljafsfhg
-
-            </summary>
+            <summary>Explore our handpicked featured dishes — a delightful mix of fresh ingredients, bold flavors, and seasonal inspirations crafted to elevate your dining experience.</summary>
             <a role="button" href="/booking">Reserve A Table</a>
         </aside>
         <main>
