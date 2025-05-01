@@ -11,7 +11,7 @@ function Featured() {
             <Link to="/booking">Reserve A Table</Link>
         </aside>
         <main>
-            <img src="pic1.png" alt="Featured" />
+            <img src="/pic1.png" alt="Featured" />
         </main>
     </section>
   )
