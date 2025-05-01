@@ -11,7 +11,15 @@ body{
 
 }
 
-
+a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: medium;
+  font-size: 20px;
+  font-family: 'Karla', sans-serif;
+  color: #495E57;
+  font-weight: medium;
+}
 
 h1{
   font-family: Markazi Text;
@@ -268,6 +276,8 @@ footer{
   color: white;
   margin-top: 1rem;
   padding: 2rem 0rem;
+  position: relative;
+  bottom: 0;
 }
 .success{
   display: flex;
@@ -324,11 +334,14 @@ a[type="button"]{
 }
 
 .contact {
-  height: 82vh;
   padding: 4rem 2rem;
   text-align: center;
 }
-
+#contact-url{
+  background-color: #F4CE14;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
 .contact-header h1 {
   font-family: 'Markazi Text';
   font-size: 54px;
@@ -453,5 +466,7 @@ a[type="button"]{
   footer {
     padding: 1rem 0;
     flex-direction: column;
+    position: relative;
+    bottom: 0;
   }
 }
