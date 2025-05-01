@@ -5,6 +5,7 @@ function Contact() {
     <header className="contact-header">
       <h1>Let’s Connect</h1>
       <p>I'm always open to discussing software projects, research, or just tech in general. Feel free to reach out!</p>
+      <p><a href='https://shivamjadhav.com' id="contact-url">View My Portfolio </a></p>
     </header>
   
     <div className="contact-cards">

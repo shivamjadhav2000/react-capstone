@@ -11,7 +11,15 @@ body{
 
 }
 
-
+a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: medium;
+  font-size: 20px;
+  font-family: 'Karla', sans-serif;
+  color: #495E57;
+  font-weight: medium;
+}
 
 h1{
   font-family: Markazi Text;
@@ -329,7 +337,11 @@ a[type="button"]{
   padding: 4rem 2rem;
   text-align: center;
 }
-
+#contact-url{
+  background-color: #F4CE14;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
 .contact-header h1 {
   font-family: 'Markazi Text';
   font-size: 54px;
