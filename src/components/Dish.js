@@ -3,7 +3,7 @@ import React from 'react'
 function Dish(dish) {
   return (
     <article className='dish'>
-        <img src={dish.image} alt={dish.name} />
+        <img src={process.env.PUBLIC_URL+dish.image} alt={dish.name} />
         <header>
         <p>{dish.name}</p>
         <p className='price'>${dish.price}</p>
