@@ -405,7 +405,6 @@ a[type="button"]{
   nav ul {
     margin: 0rem 4rem;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 1rem;
   }
 
@@ -440,10 +439,10 @@ a[type="button"]{
 
 @media (max-width: 720px) {
   nav ul {
-    flex-direction: column;
-    align-items: center;
-    margin: 0 1rem;
-    padding-top: 1rem;
+    margin: 0rem 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
   }
 
   .featured {
@@ -469,4 +468,23 @@ a[type="button"]{
     position: relative;
     bottom: 0;
   }
+}
+
+@media (max-width: 480px) {
+  nav{
+    margin: 0rem 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  nav ul{
+    width:100%;
+    height: 100%;
+  }
+  nav ul li{
+    padding: 0.5rem;
+  }
+ 
+
+  
 }
