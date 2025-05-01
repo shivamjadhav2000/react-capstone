@@ -290,6 +290,14 @@ padding: 0 2rem;
 max-width: 1200px;
   margin-top: 8rem;
 }
+
+.error{
+  padding:0.5rem;
+  width:100%;
+  border: 1px solid red;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
 .info{
   display: flex;
   flex-direction: column;
